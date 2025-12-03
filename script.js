@@ -70,7 +70,7 @@ function clickedTreatButton() { //treat, the pet gets +2 happiness and +1 weight
 
 function clickedPlayButton() { //play, the pet gets +3 happiness and -1 weight
   pet_info.happiness += 3;
-  pet_info.weight -= 1;
+  pet_info.weight += 1;
   playSound("button-sound");
   showPetComment(`${pet_info.name}: Lets play more!!`);
   checkAndUpdatePetInfoInHtml();
